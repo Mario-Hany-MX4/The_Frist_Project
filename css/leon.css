@@ -9,6 +9,10 @@
     --section-padding: 60px;
   --section-background: #f6f6f6;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: "Work Sans", sans-serif;
 }
@@ -420,11 +424,23 @@ body {
   font-weight: 800;
 }
 
+@media (max-width: 767px) {
+  .contact .contact-content .lable,
+  .contact .contact-content .mail {
+    font-size: 25px;
+} 
+}
+
 .contact .contact-content .social {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   font-size: 16px;
+}
+
+.contact .contact-content i {
+  margin-left: 10px;
+  color: var(--socend-color);
 }
 /* end contact  */
 /* start footer  */
